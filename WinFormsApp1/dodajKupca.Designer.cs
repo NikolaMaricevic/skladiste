@@ -28,70 +28,80 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.ime = new System.Windows.Forms.TextBox();
-            this.oib = new System.Windows.Forms.TextBox();
-            this.prezime = new System.Windows.Forms.TextBox();
-            this.nazad = new System.Windows.Forms.Button();
-            this.Dodaj = new System.Windows.Forms.Button();
-            this.SuspendLayout();
+            ime = new TextBox();
+            oib = new TextBox();
+            prezime = new TextBox();
+            nazad = new Button();
+            Dodaj = new Button();
+            SuspendLayout();
             // 
             // ime
             // 
-            this.ime.Location = new System.Drawing.Point(80, 52);
-            this.ime.Name = "ime";
-            this.ime.Size = new System.Drawing.Size(327, 23);
-            this.ime.TabIndex = 0;
-            this.ime.Text = "Unesi ime";
+            ime.Location = new Point(91, 69);
+            ime.Margin = new Padding(3, 4, 3, 4);
+            ime.Name = "ime";
+            ime.Size = new Size(373, 27);
+            ime.TabIndex = 0;
+            ime.Text = "Unesi ime";
+            ime.TextChanged += ime_TextChanged;
             // 
             // oib
             // 
-            this.oib.Location = new System.Drawing.Point(80, 210);
-            this.oib.Name = "oib";
-            this.oib.Size = new System.Drawing.Size(327, 23);
-            this.oib.TabIndex = 1;
-            this.oib.Text = "Unesi OIB";
+            oib.Location = new Point(91, 280);
+            oib.Margin = new Padding(3, 4, 3, 4);
+            oib.Name = "oib";
+            oib.Size = new Size(373, 27);
+            oib.TabIndex = 1;
+            oib.Text = "Unesi OIB";
+            oib.TextChanged += oib_TextChanged;
             // 
             // prezime
             // 
-            this.prezime.Location = new System.Drawing.Point(80, 129);
-            this.prezime.Name = "prezime";
-            this.prezime.Size = new System.Drawing.Size(327, 23);
-            this.prezime.TabIndex = 2;
-            this.prezime.Text = "Unesi prezime";
+            prezime.Location = new Point(91, 172);
+            prezime.Margin = new Padding(3, 4, 3, 4);
+            prezime.Name = "prezime";
+            prezime.Size = new Size(373, 27);
+            prezime.TabIndex = 2;
+            prezime.Text = "Unesi prezime";
+            prezime.TextChanged += prezime_TextChanged;
             // 
             // nazad
             // 
-            this.nazad.Location = new System.Drawing.Point(93, 299);
-            this.nazad.Name = "nazad";
-            this.nazad.Size = new System.Drawing.Size(191, 94);
-            this.nazad.TabIndex = 3;
-            this.nazad.Text = "Nazad";
-            this.nazad.UseVisualStyleBackColor = true;
+            nazad.Location = new Point(106, 399);
+            nazad.Margin = new Padding(3, 4, 3, 4);
+            nazad.Name = "nazad";
+            nazad.Size = new Size(218, 125);
+            nazad.TabIndex = 3;
+            nazad.Text = "Nazad";
+            nazad.UseVisualStyleBackColor = true;
+            nazad.Click += nazad_Click;
             // 
             // Dodaj
             // 
-            this.Dodaj.Location = new System.Drawing.Point(492, 299);
-            this.Dodaj.Name = "Dodaj";
-            this.Dodaj.Size = new System.Drawing.Size(191, 94);
-            this.Dodaj.TabIndex = 4;
-            this.Dodaj.Text = "Dodaj";
-            this.Dodaj.UseVisualStyleBackColor = true;
+            Dodaj.Location = new Point(562, 399);
+            Dodaj.Margin = new Padding(3, 4, 3, 4);
+            Dodaj.Name = "Dodaj";
+            Dodaj.Size = new Size(218, 125);
+            Dodaj.TabIndex = 4;
+            Dodaj.Text = "Dodaj";
+            Dodaj.UseVisualStyleBackColor = true;
+            Dodaj.Click += Dodaj_Click;
             // 
             // dodajKupca
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.Dodaj);
-            this.Controls.Add(this.nazad);
-            this.Controls.Add(this.prezime);
-            this.Controls.Add(this.oib);
-            this.Controls.Add(this.ime);
-            this.Name = "dodajKupca";
-            this.Text = "dodajKupca";
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(914, 600);
+            Controls.Add(Dodaj);
+            Controls.Add(nazad);
+            Controls.Add(prezime);
+            Controls.Add(oib);
+            Controls.Add(ime);
+            Margin = new Padding(3, 4, 3, 4);
+            Name = "dodajKupca";
+            Text = "dodajKupca";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

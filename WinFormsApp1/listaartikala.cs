@@ -16,5 +16,35 @@ namespace WinFormsApp1
         {
             InitializeComponent();
         }
+
+        private void narudzba_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void kupac_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Artikli_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dodajArtikl_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void urediArtikl_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void izbrisiArtikl_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

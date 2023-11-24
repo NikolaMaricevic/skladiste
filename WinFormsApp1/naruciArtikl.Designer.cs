@@ -28,83 +28,76 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.naruci = new System.Windows.Forms.Button();
-            this.nazad = new System.Windows.Forms.Button();
-            this.broj = new System.Windows.Forms.TextBox();
-            this.adresa = new System.Windows.Forms.TextBox();
-            this.nazivArtikla = new System.Windows.Forms.TextBox();
-            this.SuspendLayout();
+            naruci = new Button();
+            nazad = new Button();
+            listaKupaca = new ListBox();
+            listaArtikala = new ListBox();
+            SuspendLayout();
             // 
             // naruci
             // 
-            this.naruci.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.naruci.Location = new System.Drawing.Point(511, 302);
-            this.naruci.Name = "naruci";
-            this.naruci.Size = new System.Drawing.Size(191, 94);
-            this.naruci.TabIndex = 9;
-            this.naruci.Text = "Naruči";
-            this.naruci.UseVisualStyleBackColor = true;
+            naruci.Cursor = Cursors.IBeam;
+            naruci.Location = new Point(584, 403);
+            naruci.Margin = new Padding(3, 4, 3, 4);
+            naruci.Name = "naruci";
+            naruci.Size = new Size(218, 125);
+            naruci.TabIndex = 9;
+            naruci.Text = "Naruči";
+            naruci.UseVisualStyleBackColor = true;
+            naruci.Click += naruci_Click;
             // 
             // nazad
             // 
-            this.nazad.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.nazad.Location = new System.Drawing.Point(112, 302);
-            this.nazad.Name = "nazad";
-            this.nazad.Size = new System.Drawing.Size(191, 94);
-            this.nazad.TabIndex = 8;
-            this.nazad.Text = "Nazad";
-            this.nazad.UseVisualStyleBackColor = true;
+            nazad.Cursor = Cursors.IBeam;
+            nazad.Location = new Point(128, 403);
+            nazad.Margin = new Padding(3, 4, 3, 4);
+            nazad.Name = "nazad";
+            nazad.Size = new Size(218, 125);
+            nazad.TabIndex = 8;
+            nazad.Text = "Nazad";
+            nazad.UseVisualStyleBackColor = true;
+            nazad.Click += nazad_Click;
             // 
-            // broj
+            // listaKupaca
             // 
-            this.broj.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.broj.Location = new System.Drawing.Point(99, 132);
-            this.broj.Name = "broj";
-            this.broj.Size = new System.Drawing.Size(327, 23);
-            this.broj.TabIndex = 7;
-            this.broj.Text = "koliko želiš naručiti";
+            listaKupaca.FormattingEnabled = true;
+            listaKupaca.ItemHeight = 20;
+            listaKupaca.Location = new Point(67, 26);
+            listaKupaca.Name = "listaKupaca";
+            listaKupaca.Size = new Size(320, 304);
+            listaKupaca.TabIndex = 10;
+            listaKupaca.SelectedIndexChanged += listaKupaca_SelectedIndexChanged;
             // 
-            // adresa
+            // listaArtikala
             // 
-            this.adresa.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.adresa.Location = new System.Drawing.Point(99, 213);
-            this.adresa.Name = "adresa";
-            this.adresa.Size = new System.Drawing.Size(327, 23);
-            this.adresa.TabIndex = 6;
-            this.adresa.Text = "Unesi adresu";
-            // 
-            // nazivArtikla
-            // 
-            this.nazivArtikla.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.nazivArtikla.Location = new System.Drawing.Point(99, 55);
-            this.nazivArtikla.Name = "nazivArtikla";
-            this.nazivArtikla.Size = new System.Drawing.Size(327, 23);
-            this.nazivArtikla.TabIndex = 5;
-            this.nazivArtikla.Text = "Naziv Artikla";
+            listaArtikala.FormattingEnabled = true;
+            listaArtikala.ItemHeight = 20;
+            listaArtikala.Location = new Point(549, 26);
+            listaArtikala.Name = "listaArtikala";
+            listaArtikala.Size = new Size(320, 304);
+            listaArtikala.TabIndex = 11;
+            listaArtikala.SelectedIndexChanged += listaArtikala_SelectedIndexChanged;
             // 
             // naruciArtikl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.naruci);
-            this.Controls.Add(this.nazad);
-            this.Controls.Add(this.broj);
-            this.Controls.Add(this.adresa);
-            this.Controls.Add(this.nazivArtikla);
-            this.Name = "naruciArtikl";
-            this.Text = "naruciArtikl";
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(914, 600);
+            Controls.Add(listaArtikala);
+            Controls.Add(listaKupaca);
+            Controls.Add(naruci);
+            Controls.Add(nazad);
+            Margin = new Padding(3, 4, 3, 4);
+            Name = "naruciArtikl";
+            Text = "naruciArtikl";
+            ResumeLayout(false);
         }
 
         #endregion
 
         private Button naruci;
         private Button nazad;
-        private TextBox broj;
-        private TextBox adresa;
-        private TextBox nazivArtikla;
+        private ListBox listaKupaca;
+        private ListBox listaArtikala;
     }
 }

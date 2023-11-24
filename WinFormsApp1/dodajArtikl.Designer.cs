@@ -28,75 +28,85 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.artikldodaj = new System.Windows.Forms.Button();
-            this.nazad = new System.Windows.Forms.Button();
-            this.kategorija = new System.Windows.Forms.TextBox();
-            this.ISBN = new System.Windows.Forms.TextBox();
-            this.nazivArtikla = new System.Windows.Forms.TextBox();
-            this.SuspendLayout();
+            artikldodaj = new Button();
+            nazad = new Button();
+            kategorija = new TextBox();
+            Barcode = new TextBox();
+            nazivArtikla = new TextBox();
+            SuspendLayout();
             // 
             // artikldodaj
             // 
-            this.artikldodaj.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.artikldodaj.Location = new System.Drawing.Point(511, 302);
-            this.artikldodaj.Name = "artikldodaj";
-            this.artikldodaj.Size = new System.Drawing.Size(191, 94);
-            this.artikldodaj.TabIndex = 14;
-            this.artikldodaj.Text = "Dodaj";
-            this.artikldodaj.UseVisualStyleBackColor = true;
+            artikldodaj.Cursor = Cursors.IBeam;
+            artikldodaj.Location = new Point(584, 403);
+            artikldodaj.Margin = new Padding(3, 4, 3, 4);
+            artikldodaj.Name = "artikldodaj";
+            artikldodaj.Size = new Size(218, 125);
+            artikldodaj.TabIndex = 14;
+            artikldodaj.Text = "Dodaj";
+            artikldodaj.UseVisualStyleBackColor = true;
+            artikldodaj.Click += artikldodaj_Click;
             // 
             // nazad
             // 
-            this.nazad.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.nazad.Location = new System.Drawing.Point(112, 302);
-            this.nazad.Name = "nazad";
-            this.nazad.Size = new System.Drawing.Size(191, 94);
-            this.nazad.TabIndex = 13;
-            this.nazad.Text = "Nazad";
-            this.nazad.UseVisualStyleBackColor = true;
+            nazad.Cursor = Cursors.IBeam;
+            nazad.Location = new Point(128, 403);
+            nazad.Margin = new Padding(3, 4, 3, 4);
+            nazad.Name = "nazad";
+            nazad.Size = new Size(218, 125);
+            nazad.TabIndex = 13;
+            nazad.Text = "Nazad";
+            nazad.UseVisualStyleBackColor = true;
+            nazad.Click += nazad_Click;
             // 
             // kategorija
             // 
-            this.kategorija.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.kategorija.Location = new System.Drawing.Point(99, 132);
-            this.kategorija.Name = "kategorija";
-            this.kategorija.Size = new System.Drawing.Size(327, 23);
-            this.kategorija.TabIndex = 12;
-            this.kategorija.Text = "Kategorija artikla";
+            kategorija.Cursor = Cursors.IBeam;
+            kategorija.Location = new Point(113, 176);
+            kategorija.Margin = new Padding(3, 4, 3, 4);
+            kategorija.Name = "kategorija";
+            kategorija.Size = new Size(373, 27);
+            kategorija.TabIndex = 12;
+            kategorija.Text = "Kategorija artikla";
+            kategorija.TextChanged += kategorija_TextChanged;
             // 
-            // ISBN
+            // Barcode
             // 
-            this.ISBN.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.ISBN.Location = new System.Drawing.Point(99, 213);
-            this.ISBN.Name = "ISBN";
-            this.ISBN.Size = new System.Drawing.Size(327, 23);
-            this.ISBN.TabIndex = 11;
-            this.ISBN.Text = "Unesi ISBN";
+            Barcode.Cursor = Cursors.IBeam;
+            Barcode.Location = new Point(113, 284);
+            Barcode.Margin = new Padding(3, 4, 3, 4);
+            Barcode.Name = "Barcode";
+            Barcode.Size = new Size(373, 27);
+            Barcode.TabIndex = 11;
+            Barcode.Text = "Unesi barcode";
+            Barcode.TextChanged += Barcode_TextChanged;
             // 
             // nazivArtikla
             // 
-            this.nazivArtikla.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.nazivArtikla.Location = new System.Drawing.Point(99, 55);
-            this.nazivArtikla.Name = "nazivArtikla";
-            this.nazivArtikla.Size = new System.Drawing.Size(327, 23);
-            this.nazivArtikla.TabIndex = 10;
-            this.nazivArtikla.Text = "Naziv Artikla";
+            nazivArtikla.Cursor = Cursors.IBeam;
+            nazivArtikla.Location = new Point(113, 73);
+            nazivArtikla.Margin = new Padding(3, 4, 3, 4);
+            nazivArtikla.Name = "nazivArtikla";
+            nazivArtikla.Size = new Size(373, 27);
+            nazivArtikla.TabIndex = 10;
+            nazivArtikla.Text = "Naziv Artikla";
+            nazivArtikla.TextChanged += nazivArtikla_TextChanged;
             // 
             // dodajArtikl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.artikldodaj);
-            this.Controls.Add(this.nazad);
-            this.Controls.Add(this.kategorija);
-            this.Controls.Add(this.ISBN);
-            this.Controls.Add(this.nazivArtikla);
-            this.Name = "dodajArtikl";
-            this.Text = "dodajArtikl";
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(914, 600);
+            Controls.Add(artikldodaj);
+            Controls.Add(nazad);
+            Controls.Add(kategorija);
+            Controls.Add(Barcode);
+            Controls.Add(nazivArtikla);
+            Margin = new Padding(3, 4, 3, 4);
+            Name = "dodajArtikl";
+            Text = "dodajArtikl";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -104,7 +114,7 @@
         private Button artikldodaj;
         private Button nazad;
         private TextBox kategorija;
-        private TextBox ISBN;
+        private TextBox Barcode;
         private TextBox nazivArtikla;
     }
 }

@@ -16,5 +16,30 @@ namespace WinFormsApp1
         {
             InitializeComponent();
         }
+
+        private void nazivArtikla_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void kategorija_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Barcode_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void artikldodaj_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void nazad_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

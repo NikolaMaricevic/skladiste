@@ -28,83 +28,95 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.kupciLista = new System.Windows.Forms.ListBox();
-            this.izbrisiKupca = new System.Windows.Forms.Button();
-            this.urediKupca = new System.Windows.Forms.Button();
-            this.dodajkupca = new System.Windows.Forms.Button();
-            this.narudzba = new System.Windows.Forms.Button();
-            this.artikl = new System.Windows.Forms.Button();
-            this.SuspendLayout();
+            kupciLista = new ListBox();
+            izbrisiKupca = new Button();
+            urediKupca = new Button();
+            dodajkupca = new Button();
+            narudzba = new Button();
+            artikl = new Button();
+            SuspendLayout();
             // 
             // kupciLista
             // 
-            this.kupciLista.FormattingEnabled = true;
-            this.kupciLista.ItemHeight = 15;
-            this.kupciLista.Location = new System.Drawing.Point(51, 104);
-            this.kupciLista.Name = "kupciLista";
-            this.kupciLista.Size = new System.Drawing.Size(414, 304);
-            this.kupciLista.TabIndex = 0;
+            kupciLista.FormattingEnabled = true;
+            kupciLista.ItemHeight = 20;
+            kupciLista.Location = new Point(58, 139);
+            kupciLista.Margin = new Padding(3, 4, 3, 4);
+            kupciLista.Name = "kupciLista";
+            kupciLista.Size = new Size(473, 404);
+            kupciLista.TabIndex = 0;
+            kupciLista.SelectedIndexChanged += kupciLista_SelectedIndexChanged;
             // 
             // izbrisiKupca
             // 
-            this.izbrisiKupca.Location = new System.Drawing.Point(580, 304);
-            this.izbrisiKupca.Name = "izbrisiKupca";
-            this.izbrisiKupca.Size = new System.Drawing.Size(123, 46);
-            this.izbrisiKupca.TabIndex = 8;
-            this.izbrisiKupca.Text = "Izbriši";
-            this.izbrisiKupca.UseVisualStyleBackColor = true;
+            izbrisiKupca.Location = new Point(663, 405);
+            izbrisiKupca.Margin = new Padding(3, 4, 3, 4);
+            izbrisiKupca.Name = "izbrisiKupca";
+            izbrisiKupca.Size = new Size(141, 61);
+            izbrisiKupca.TabIndex = 8;
+            izbrisiKupca.Text = "Izbriši";
+            izbrisiKupca.UseVisualStyleBackColor = true;
+            izbrisiKupca.Click += izbrisiKupca_Click;
             // 
             // urediKupca
             // 
-            this.urediKupca.Location = new System.Drawing.Point(580, 219);
-            this.urediKupca.Name = "urediKupca";
-            this.urediKupca.Size = new System.Drawing.Size(123, 46);
-            this.urediKupca.TabIndex = 7;
-            this.urediKupca.Text = "Uredi";
-            this.urediKupca.UseVisualStyleBackColor = true;
+            urediKupca.Location = new Point(663, 292);
+            urediKupca.Margin = new Padding(3, 4, 3, 4);
+            urediKupca.Name = "urediKupca";
+            urediKupca.Size = new Size(141, 61);
+            urediKupca.TabIndex = 7;
+            urediKupca.Text = "Uredi";
+            urediKupca.UseVisualStyleBackColor = true;
+            urediKupca.Click += urediKupca_Click;
             // 
             // dodajkupca
             // 
-            this.dodajkupca.Location = new System.Drawing.Point(580, 126);
-            this.dodajkupca.Name = "dodajkupca";
-            this.dodajkupca.Size = new System.Drawing.Size(123, 46);
-            this.dodajkupca.TabIndex = 6;
-            this.dodajkupca.Text = "Dodaj";
-            this.dodajkupca.UseVisualStyleBackColor = true;
+            dodajkupca.Location = new Point(663, 168);
+            dodajkupca.Margin = new Padding(3, 4, 3, 4);
+            dodajkupca.Name = "dodajkupca";
+            dodajkupca.Size = new Size(141, 61);
+            dodajkupca.TabIndex = 6;
+            dodajkupca.Text = "Dodaj";
+            dodajkupca.UseVisualStyleBackColor = true;
+            dodajkupca.Click += dodajkupca_Click;
             // 
             // narudzba
             // 
-            this.narudzba.Location = new System.Drawing.Point(184, 39);
-            this.narudzba.Name = "narudzba";
-            this.narudzba.Size = new System.Drawing.Size(105, 35);
-            this.narudzba.TabIndex = 10;
-            this.narudzba.Text = "Narudzba";
-            this.narudzba.UseVisualStyleBackColor = true;
+            narudzba.Location = new Point(210, 52);
+            narudzba.Margin = new Padding(3, 4, 3, 4);
+            narudzba.Name = "narudzba";
+            narudzba.Size = new Size(120, 47);
+            narudzba.TabIndex = 10;
+            narudzba.Text = "Narudzba";
+            narudzba.UseVisualStyleBackColor = true;
+            narudzba.Click += narudzba_Click;
             // 
             // artikl
             // 
-            this.artikl.Location = new System.Drawing.Point(51, 39);
-            this.artikl.Name = "artikl";
-            this.artikl.Size = new System.Drawing.Size(105, 35);
-            this.artikl.TabIndex = 9;
-            this.artikl.Text = "artikl";
-            this.artikl.UseVisualStyleBackColor = true;
+            artikl.Location = new Point(58, 52);
+            artikl.Margin = new Padding(3, 4, 3, 4);
+            artikl.Name = "artikl";
+            artikl.Size = new Size(120, 47);
+            artikl.TabIndex = 9;
+            artikl.Text = "artikl";
+            artikl.UseVisualStyleBackColor = true;
+            artikl.Click += artikl_Click;
             // 
             // kupci
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.narudzba);
-            this.Controls.Add(this.artikl);
-            this.Controls.Add(this.izbrisiKupca);
-            this.Controls.Add(this.urediKupca);
-            this.Controls.Add(this.dodajkupca);
-            this.Controls.Add(this.kupciLista);
-            this.Name = "kupci";
-            this.Text = "kupci";
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(914, 600);
+            Controls.Add(narudzba);
+            Controls.Add(artikl);
+            Controls.Add(izbrisiKupca);
+            Controls.Add(urediKupca);
+            Controls.Add(dodajkupca);
+            Controls.Add(kupciLista);
+            Margin = new Padding(3, 4, 3, 4);
+            Name = "kupci";
+            Text = "kupci";
+            ResumeLayout(false);
         }
 
         #endregion

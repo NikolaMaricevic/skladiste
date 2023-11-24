@@ -11,5 +11,30 @@ namespace WinFormsApp1
         {
 
         }
+
+        private void kupac_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Narudzbe_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dodajnarudzbu_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void urediNarudzbu_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void izbrisiNarudzbu_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

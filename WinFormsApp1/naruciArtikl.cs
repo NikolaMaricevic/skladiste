@@ -16,5 +16,25 @@ namespace WinFormsApp1
         {
             InitializeComponent();
         }
+
+        private void listaKupaca_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listaArtikala_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void nazad_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void naruci_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -28,89 +28,100 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.artikl = new System.Windows.Forms.Button();
-            this.kupac = new System.Windows.Forms.Button();
-            this.Narudzbe = new System.Windows.Forms.ListBox();
-            this.dodajnarudzbu = new System.Windows.Forms.Button();
-            this.urediNarudzbu = new System.Windows.Forms.Button();
-            this.izbrisiNarudzbu = new System.Windows.Forms.Button();
-            this.SuspendLayout();
+            button1 = new Button();
+            kupac = new Button();
+            Narudzbe = new ListBox();
+            dodajnarudzbu = new Button();
+            urediNarudzbu = new Button();
+            izbrisiNarudzbu = new Button();
+            SuspendLayout();
             // 
-            // artikl
+            // button1
             // 
-            this.artikl.Location = new System.Drawing.Point(50, 27);
-            this.artikl.Name = "artikl";
-            this.artikl.Size = new System.Drawing.Size(105, 35);
-            this.artikl.TabIndex = 0;
-            this.artikl.Text = "artikl";
-            this.artikl.UseVisualStyleBackColor = true;
-            this.artikl.Click += new System.EventHandler(this.button1_Click);
+            button1.Location = new Point(57, 36);
+            button1.Margin = new Padding(3, 4, 3, 4);
+            button1.Name = "button1";
+            button1.Size = new Size(120, 47);
+            button1.TabIndex = 0;
+            button1.Text = "artikl";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // kupac
             // 
-            this.kupac.Location = new System.Drawing.Point(183, 27);
-            this.kupac.Name = "kupac";
-            this.kupac.Size = new System.Drawing.Size(105, 35);
-            this.kupac.TabIndex = 1;
-            this.kupac.Text = "kupac";
-            this.kupac.UseVisualStyleBackColor = true;
+            kupac.Location = new Point(209, 36);
+            kupac.Margin = new Padding(3, 4, 3, 4);
+            kupac.Name = "kupac";
+            kupac.Size = new Size(120, 47);
+            kupac.TabIndex = 1;
+            kupac.Text = "kupac";
+            kupac.UseVisualStyleBackColor = true;
+            kupac.Click += kupac_Click;
             // 
             // Narudzbe
             // 
-            this.Narudzbe.FormattingEnabled = true;
-            this.Narudzbe.ItemHeight = 15;
-            this.Narudzbe.Location = new System.Drawing.Point(50, 94);
-            this.Narudzbe.Name = "Narudzbe";
-            this.Narudzbe.Size = new System.Drawing.Size(437, 304);
-            this.Narudzbe.TabIndex = 2;
+            Narudzbe.FormattingEnabled = true;
+            Narudzbe.ItemHeight = 20;
+            Narudzbe.Location = new Point(57, 125);
+            Narudzbe.Margin = new Padding(3, 4, 3, 4);
+            Narudzbe.Name = "Narudzbe";
+            Narudzbe.Size = new Size(499, 404);
+            Narudzbe.TabIndex = 2;
+            Narudzbe.SelectedIndexChanged += Narudzbe_SelectedIndexChanged;
             // 
             // dodajnarudzbu
             // 
-            this.dodajnarudzbu.Location = new System.Drawing.Point(573, 106);
-            this.dodajnarudzbu.Name = "dodajnarudzbu";
-            this.dodajnarudzbu.Size = new System.Drawing.Size(123, 46);
-            this.dodajnarudzbu.TabIndex = 3;
-            this.dodajnarudzbu.Text = "Dodaj";
-            this.dodajnarudzbu.UseVisualStyleBackColor = true;
+            dodajnarudzbu.Location = new Point(655, 141);
+            dodajnarudzbu.Margin = new Padding(3, 4, 3, 4);
+            dodajnarudzbu.Name = "dodajnarudzbu";
+            dodajnarudzbu.Size = new Size(141, 61);
+            dodajnarudzbu.TabIndex = 3;
+            dodajnarudzbu.Text = "Dodaj";
+            dodajnarudzbu.UseVisualStyleBackColor = true;
+            dodajnarudzbu.Click += dodajnarudzbu_Click;
             // 
             // urediNarudzbu
             // 
-            this.urediNarudzbu.Location = new System.Drawing.Point(573, 199);
-            this.urediNarudzbu.Name = "urediNarudzbu";
-            this.urediNarudzbu.Size = new System.Drawing.Size(123, 46);
-            this.urediNarudzbu.TabIndex = 4;
-            this.urediNarudzbu.Text = "Uredi";
-            this.urediNarudzbu.UseVisualStyleBackColor = true;
+            urediNarudzbu.Location = new Point(655, 265);
+            urediNarudzbu.Margin = new Padding(3, 4, 3, 4);
+            urediNarudzbu.Name = "urediNarudzbu";
+            urediNarudzbu.Size = new Size(141, 61);
+            urediNarudzbu.TabIndex = 4;
+            urediNarudzbu.Text = "Uredi";
+            urediNarudzbu.UseVisualStyleBackColor = true;
+            urediNarudzbu.Click += urediNarudzbu_Click;
             // 
             // izbrisiNarudzbu
             // 
-            this.izbrisiNarudzbu.Location = new System.Drawing.Point(573, 284);
-            this.izbrisiNarudzbu.Name = "izbrisiNarudzbu";
-            this.izbrisiNarudzbu.Size = new System.Drawing.Size(123, 46);
-            this.izbrisiNarudzbu.TabIndex = 5;
-            this.izbrisiNarudzbu.Text = "Izbriši";
-            this.izbrisiNarudzbu.UseVisualStyleBackColor = true;
+            izbrisiNarudzbu.Location = new Point(655, 379);
+            izbrisiNarudzbu.Margin = new Padding(3, 4, 3, 4);
+            izbrisiNarudzbu.Name = "izbrisiNarudzbu";
+            izbrisiNarudzbu.Size = new Size(141, 61);
+            izbrisiNarudzbu.TabIndex = 5;
+            izbrisiNarudzbu.Text = "Izbriši";
+            izbrisiNarudzbu.UseVisualStyleBackColor = true;
+            izbrisiNarudzbu.Click += izbrisiNarudzbu_Click;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.izbrisiNarudzbu);
-            this.Controls.Add(this.urediNarudzbu);
-            this.Controls.Add(this.dodajnarudzbu);
-            this.Controls.Add(this.Narudzbe);
-            this.Controls.Add(this.kupac);
-            this.Controls.Add(this.artikl);
-            this.Name = "Form1";
-            this.Text = "Form1";
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(914, 600);
+            Controls.Add(izbrisiNarudzbu);
+            Controls.Add(urediNarudzbu);
+            Controls.Add(dodajnarudzbu);
+            Controls.Add(Narudzbe);
+            Controls.Add(kupac);
+            Controls.Add(button1);
+            Margin = new Padding(3, 4, 3, 4);
+            Name = "Form1";
+            Text = "Form1";
+            ResumeLayout(false);
         }
 
         #endregion
 
-        private Button artikl;
+        private Button button1;
         private Button kupac;
         private ListBox Narudzbe;
         private Button dodajnarudzbu;
