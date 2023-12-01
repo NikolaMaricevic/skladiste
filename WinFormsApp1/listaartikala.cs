@@ -19,7 +19,7 @@ namespace WinFormsApp1
 
         private void narudzba_Click(object sender, EventArgs e)
         {
-
+            new Form1().Show();
         }
 
         private void kupac_Click(object sender, EventArgs e)

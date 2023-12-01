@@ -39,7 +39,7 @@ namespace WinFormsApp1
 
         private void nazad_Click(object sender, EventArgs e)
         {
-
+            Close();
         }
     }
 }

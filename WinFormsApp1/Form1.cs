@@ -9,12 +9,12 @@ namespace WinFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            new listaartikala().Show();
         }
 
         private void kupac_Click(object sender, EventArgs e)
         {
-
+            new kupci().Show();
         }
 
         private void Narudzbe_SelectedIndexChanged(object sender, EventArgs e)
@@ -24,7 +24,7 @@ namespace WinFormsApp1
 
         private void dodajnarudzbu_Click(object sender, EventArgs e)
         {
-
+            new naruciArtikl().Show();
         }
 
         private void urediNarudzbu_Click(object sender, EventArgs e)
